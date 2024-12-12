@@ -242,3 +242,38 @@ footer {
         font-size: 0.9rem;
     }
 }
+
+/* Add these rules to your existing style.css file */
+
+.section-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+    margin: 2rem auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* Update existing header-image class */
+.header-image {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 1rem;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    margin: 2rem auto;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .section-image {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .header-image {
+        width: 250px;
+        height: 250px;
+    }
+}
