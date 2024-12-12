@@ -3,37 +3,64 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    color: #333;
+    background-color: #f9f9f9;
 }
 
 header {
-    background: #333;
-    color: #fff;
+    background: #4CAF50;
+    color: white;
+    padding: 20px 0;
     text-align: center;
-    padding: 2em 0;
 }
 
-header h1 {
-    font-size: 2.5em;
+header img {
+    max-width: 200px;
+    margin: 10px auto;
+    display: block;
+    border-radius: 8px;
 }
 
 section {
-    padding: 2em;
-    max-width: 800px;
-    margin: auto;
+    margin: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 section h2 {
-    font-size: 2em;
-    color: #333;
+    color: #4CAF50;
+}
+
+section img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+ul li {
+    margin: 10px 0;
 }
 
 footer {
-    background: #333;
-    color: #fff;
     text-align: center;
-    padding: 1em 0;
+    background: #333;
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
 }
 
-a {
-    color: #00f;
+footer a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
