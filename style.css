@@ -23,18 +23,10 @@ header p {
     margin: 10px 0 20px;
 }
 
-header .cta-button {
-    background: white;
-    color: #4CAF50;
-    padding: 10px 20px;
-    font-size: 1rem;
-    text-decoration: none;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-header .cta-button:hover {
-    background: #f0f0f0;
+header img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 8px;
 }
 
 nav {
@@ -76,24 +68,6 @@ section {
 
 section h2 {
     color: #4CAF50;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-}
-
-.card {
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    text-align: center;
-}
-
-.card img {
-    max-width: 100px;
-    margin-bottom: 10px;
 }
 
 footer {
