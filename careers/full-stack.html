@@ -1,0 +1,202 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Full Stack Engineer | DuoAlly AI </title>
+  <style>
+    :root {
+      --primary-color: #2563eb;
+      --secondary-color: #1e40af;
+      --text-color: #1f2937;
+      --bg-light: #f3f4f6;
+      --transition: all 0.3s ease;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+      color: #2c3e50;
+      background-color: #f8f9fa;
+    }
+
+    .job-detail-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .job-header {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      height: 80px;
+      margin-bottom: 40px;
+    }
+
+    .job-header img {
+      width: 80px;
+      height: 80px;
+      border-radius: 4px;
+    }
+
+    .job-description {
+      background-color: white;
+      border-radius: 12px;
+      padding: 40px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: #2c3e50;
+    }
+
+    h2 {
+      font-size: 1.8em;
+      color: #2c3e50;
+      margin: 30px 0 20px;
+    }
+
+    h3 {
+      font-size: 1.4em;
+      color: #2c3e50;
+      margin: 25px 0 15px;
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+
+    ul, ol {
+      margin-bottom: 20px;
+      padding-left: 25px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .skills-section {
+      background-color: white;
+      border-radius: 12px;
+      padding: 30px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .apply-button {
+      display: inline-block;
+      background-color: var(--primary-color);
+      color: white;
+      padding: 15px 30px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .apply-button:hover {
+      background-color: var(--secondary-color);
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      .job-header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .job-description {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="job-detail-container">
+    <div class="job-header">
+      <img src="/images/coding.png" alt="Engineering icon">
+      <h1>Full Stack Engineer</h1>
+    </div>
+
+    <div class="job-description">
+      <p>Looking for a talented full stack engineer to work on building scalable web applications and services. The work would include developing both frontend and backend systems, as well as maintaining and improving the entire application infrastructure.</p>
+
+      <p>DuoAlly AI helps companies develop technology-driven solutions to solve their toughest business challenges.</p>
+
+      <p>DuoAlly AI uses modern technologies to help clients build robust applications, monitor performance, implement new features, and make important architectural decisions. Over the past several years, DuoAlly AI has worked with dozens of Enterprise clients such as leading tech companies and startups.</p>
+
+      <h3>Core Responsibilities:</h3>
+      <ol>
+        <li>Frontend Development - Build responsive and interactive user interfaces</li>
+        <li>Backend Development - Design and implement scalable APIs and services</li>
+        <li>Database Management - Design and optimize database schemas and queries</li>
+        <li>DevOps - Manage deployment pipelines and infrastructure</li>
+      </ol>
+
+      <h3>Join us in shaping tomorrow together!</h3>
+
+      <p>DuoAlly AI combines modern frontend and backend technologies into a unified approach, allowing our clients to get robust, scalable applications that power their growing business needs. Through DuoAlly AI 's structured approach to tackling complex business problems and generating technology-driven solutions, we turn client projects into long-lasting, big-impact work that allows them to continue growing their companies.</p>
+
+      <div class="text-center">
+        <button class="apply-button" id="applyButton">Apply Now!</button>
+      </div>
+    </div>
+
+    <div class="skills-section">
+      <h2>Technical Skills</h2>
+
+      <h3>Frontend Technologies:</h3>
+      <ul>
+        <li>React/Vue/Angular</li>
+        <li>HTML5/CSS3</li>
+        <li>JavaScript/TypeScript</li>
+        <li>Modern CSS frameworks</li>
+        <li>State management (Redux, Vuex)</li>
+      </ul>
+
+      <h3>Backend Technologies:</h3>
+      <ul>
+        <li>Node.js/Python/Java</li>
+        <li>RESTful APIs</li>
+        <li>GraphQL</li>
+        <li>SQL and NoSQL databases</li>
+        <li>Microservices architecture</li>
+      </ul>
+
+      <h3>DevOps & Tools:</h3>
+      <ul>
+        <li>Git version control</li>
+        <li>Docker containerization</li>
+        <li>CI/CD pipelines</li>
+        <li>Cloud platforms (AWS/GCP/Azure)</li>
+        <li>Testing frameworks</li>
+      </ul>
+    </div>
+
+    <div class="job-description">
+      <p>You will be joining a team of experienced developers who can provide support and mentorship. We value collaboration, continuous learning, and innovation. An NDA will be required to protect DuoAlly AI IP and client information.</p>
+
+      <p>If you feel like your skillset lines up with these requirements, apply now!</p>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('applyButton').addEventListener('click', function() {
+      alert('Thank you for your interest! Please send your resume to careers@DuoAlly AI .com');
+    });
+  </script>
+</body>
+</html>

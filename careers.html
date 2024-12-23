@@ -1,1 +1,265 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Careers | DuoAlly AI </title>
+  <style>
+    :root {
+      --primary-color: #2563eb;
+      --secondary-color: #1e40af;
+      --text-color: #1f2937;
+      --bg-light: #f3f4f6;
+      --transition: all 0.3s ease;
+    }
 
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+      color: var(--text-color);
+    }
+
+    .section {
+      padding: 80px 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Overview Section */
+    .overview {
+      background: linear-gradient(rgba(37, 99, 235, 0.1), rgba(37, 99, 235, 0.05));
+      text-align: center;
+      padding: 120px 0;
+    }
+
+    .overview h1 {
+      font-size: 3.5rem;
+      margin-bottom: 20px;
+      color: var(--text-color);
+    }
+
+    .overview p {
+      font-size: 1.25rem;
+      max-width: 600px;
+      margin: 0 auto;
+      color: #4b5563;
+    }
+
+    /* Culture Section */
+    .culture {
+      background-color: white;
+    }
+
+    .culture-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .culture-card {
+      background: var(--bg-light);
+      padding: 30px;
+      border-radius: 12px;
+      transition: var(--transition);
+    }
+
+    .culture-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Benefits Section */
+    .benefits {
+      background-color: var(--bg-light);
+    }
+
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .benefit-card {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      text-align: center;
+      transition: var(--transition);
+    }
+
+    .benefit-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .benefit-icon {
+      width: 60px;
+      height: 60px;
+      margin: 0 auto 20px;
+      fill: var(--primary-color);
+    }
+
+    /* Positions Section */
+    .positions {
+      background-color: white;
+    }
+
+    .position-card {
+      background: var(--bg-light);
+      padding: 30px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: var(--transition);
+    }
+
+    .position-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Common Styles */
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .section-intro {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 40px;
+      color: #4b5563;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: var(--primary-color);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: var(--transition);
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: var(--secondary-color);
+    }
+
+    @media (max-width: 768px) {
+      .overview h1 {
+        font-size: 2.5rem;
+      }
+
+      .section {
+        padding: 60px 0;
+      }
+
+      .culture-grid,
+      .benefits-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .position-card {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+      }
+    }
+  </style>
+  <!-- 添加 Font Awesome 图标库 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- Overview Section -->
+  <section class="overview">
+    <div class="container">
+      <h1>Join Our Team</h1>
+      <p>Help us build the future of technology and make a difference in the world</p>
+    </div>
+  </section>
+
+  <!-- Culture Section -->
+  <section class="culture section">
+    <div class="container">
+      <h2>Our Culture</h2>
+      <p class="section-intro">We believe in creating an environment where great people can do their best work</p>
+      <div class="culture-grid">
+        <div class="culture-card">
+          <h3><i class="fas fa-lightbulb"></i> Innovation First</h3>
+          <p>We encourage creative thinking and welcome new ideas that challenge the status quo</p>
+        </div>
+        <div class="culture-card">
+          <h3><i class="fas fa-users"></i> Collaboration</h3>
+          <p>Work with talented individuals who share your passion for excellence</p>
+        </div>
+        <div class="culture-card">
+          <h3><i class="fas fa-chart-line"></i> Growth Mindset</h3>
+          <p>Continuous learning and development are core to our culture</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section class="benefits section">
+    <div class="container">
+      <h2>Benefits & Perks</h2>
+      <p class="section-intro">We take care of our team with competitive benefits and perks</p>
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <i class="fas fa-laptop-house fa-3x benefit-icon"></i>
+          <h3>Remote First</h3>
+          <p>Work from anywhere in the world</p>
+        </div>
+        <div class="benefit-card">
+          <i class="fas fa-graduation-cap fa-3x benefit-icon"></i>
+          <h3>Learning Budget</h3>
+          <p>Annual budget for courses and conferences</p>
+        </div>
+        <div class="benefit-card">
+          <i class="fas fa-heart fa-3x benefit-icon"></i>
+          <h3>Health & Wellness</h3>
+          <p>Comprehensive health coverage and wellness programs</p>
+        </div>
+        <div class="benefit-card">
+          <i class="fas fa-laptop fa-3x benefit-icon"></i>
+          <h3>Equipment</h3>
+          <p>Latest tools and tech to help you work efficiently</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Open Positions Section -->
+  <section class="positions section">
+    <div class="container">
+      <h2>Open Positions</h2>
+      <p class="section-intro">Join us in building the next generation of technology solutions</p>
+
+      <div class="position-card">
+        <div>
+          <h3><i class="fas fa-code"></i> Full Stack Engineer</h3>
+          <p>Build and maintain scalable web applications using modern technologies</p>
+        </div>
+        <a href="/careers/full-stack.html" class="btn">View Position</a>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
