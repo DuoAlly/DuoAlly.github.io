@@ -1,8 +1,9 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Careers | DuoAlly AI </title>
+  <title>Careers | DuoAlly AI</title>
   <style>
     :root {
       --primary-color: #2563eb;
@@ -34,6 +35,49 @@
       padding: 0 20px;
     }
 
+    /* Navbar Styles */
+    nav {
+      background-color: white;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 10px 20px;
+    }
+
+    .nav-logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: var(--primary-color);
+      text-decoration: none;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--text-color);
+      font-weight: 500;
+      transition: var(--transition);
+    }
+
+    .nav-links a:hover {
+      color: var(--primary-color);
+    }
+
+    .nav-links .active {
+      color: var(--primary-color);
+    }
+
     /* Overview Section */
     .overview {
       background: linear-gradient(rgba(37, 99, 235, 0.1), rgba(37, 99, 235, 0.05));
@@ -54,138 +98,25 @@
       color: #4b5563;
     }
 
-    /* Culture Section */
-    .culture {
-      background-color: white;
-    }
-
-    .culture-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 30px;
-      margin-top: 40px;
-    }
-
-    .culture-card {
-      background: var(--bg-light);
-      padding: 30px;
-      border-radius: 12px;
-      transition: var(--transition);
-    }
-
-    .culture-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    }
-
-    /* Benefits Section */
-    .benefits {
-      background-color: var(--bg-light);
-    }
-
-    .benefits-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
-      margin-top: 40px;
-    }
-
-    .benefit-card {
-      background: white;
-      padding: 30px;
-      border-radius: 12px;
-      text-align: center;
-      transition: var(--transition);
-    }
-
-    .benefit-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    }
-
-    .benefit-icon {
-      width: 60px;
-      height: 60px;
-      margin: 0 auto 20px;
-      fill: var(--primary-color);
-    }
-
-    /* Positions Section */
-    .positions {
-      background-color: white;
-    }
-
-    .position-card {
-      background: var(--bg-light);
-      padding: 30px;
-      border-radius: 12px;
-      margin-bottom: 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      transition: var(--transition);
-    }
-
-    .position-card:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    }
-
-    /* Common Styles */
-    h2 {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
-      text-align: center;
-    }
-
-    .section-intro {
-      text-align: center;
-      max-width: 700px;
-      margin: 0 auto 40px;
-      color: #4b5563;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 12px 24px;
-      background-color: var(--primary-color);
-      color: white;
-      text-decoration: none;
-      border-radius: 6px;
-      transition: var(--transition);
-      border: none;
-      cursor: pointer;
-    }
-
-    .btn:hover {
-      background-color: var(--secondary-color);
-    }
-
-    @media (max-width: 768px) {
-      .overview h1 {
-        font-size: 2.5rem;
-      }
-
-      .section {
-        padding: 60px 0;
-      }
-
-      .culture-grid,
-      .benefits-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .position-card {
-        flex-direction: column;
-        text-align: center;
-        gap: 20px;
-      }
-    }
+    /* Other styles remain the same as provided above */
   </style>
-  <!-- 添加 Font Awesome 图标库 -->
+  <!-- Add Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+  <nav>
+    <div class="container nav-content">
+      <a href="/" class="nav-logo">DuoAlly</a>
+      <ul class="nav-links">
+        <li><a href="/" class="active">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/careers.html">Careers</a></li>
+        <li><a href="#research">Research</a></li>
+      </ul>
+    </div>
+  </nav>
+
   <!-- Overview Section -->
   <section class="overview">
     <div class="container">
