@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Software Engineer | DuoAlly AI</title>
+  <style>
+    :root {
+      --primary-color: #2563eb;
+      --secondary-color: #1e40af;
+      --text-color: #1f2937;
+      --bg-light: #f3f4f6;
+      --transition: all 0.3s ease;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+      color: #2c3e50;
+      background-color: #f8f9fa;
+    }
+
+    .job-detail-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .job-header {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      height: 80px;
+      margin-bottom: 40px;
+    }
+
+    .job-header img {
+      width: 80px;
+      height: 80px;
+      border-radius: 4px;
+    }
+
+    .job-description {
+      background-color: white;
+      border-radius: 12px;
+      padding: 40px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: #2c3e50;
+    }
+
+    h2 {
+      font-size: 1.8em;
+      color: #2c3e50;
+      margin: 30px 0 20px;
+    }
+
+    h3 {
+      font-size: 1.4em;
+      color: #2c3e50;
+      margin: 25px 0 15px;
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+
+    ul, ol {
+      margin-bottom: 20px;
+      padding-left: 25px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .skills-section {
+      background-color: white;
+      border-radius: 12px;
+      padding: 30px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .apply-button {
+      display: inline-block;
+      background-color: var(--primary-color);
+      color: white;
+      padding: 15px 30px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .apply-button:hover {
+      background-color: var(--secondary-color);
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      .job-header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .job-description {
+        padding: 20px;
+      }
+    }
+
+    /* Additional Styling for Job Listings */
+    .jobs-list {
+      margin-bottom: 60px;
+    }
+
+    .job-item {
+      margin-bottom: 60px;
+    }
+  </style>
+</head>
+<body>
+  <div class="job-detail-container">
+    <div class="job-header">
+      <img src="/images/software-engineer.png" alt="Software Engineer icon">
+      <h1>Software Engineer</h1>
+    </div>
+
+    <div class="job-description">
+      <p>DuoAlly AI is seeking a skilled Software Engineer specializing in machine learning and artificial intelligence to design, develop, and maintain advanced software solutions that drive our clients' success. The ideal candidate will have a strong foundation in software engineering principles, experience with ML/AI libraries, and a passion for building innovative applications.</p>
+
+      <p>As a Software Engineer at DuoAlly AI, you will collaborate with cross-functional teams to deliver cutting-edge solutions that meet complex business needs and exceed client expectations.</p>
+
+      <p>Our team leverages state-of-the-art technologies to create scalable and efficient software systems. By joining us, you'll have the opportunity to work on diverse projects, including chatbot algorithms, reinforcement learning models, video game development, and advanced visualization and graphics.</p>
+
+      <h3>Core Responsibilities:</h3>
+      <ol>
+        <li>Design and develop machine learning and AI-driven software applications based on client requirements</li>
+        <li>Implement and optimize algorithms for natural language processing, reinforcement learning, and computer vision</li>
+        <li>Develop and integrate chatbot functionalities and intelligent agents</li>
+        <li>Collaborate with data scientists and other engineers to deploy scalable ML models</li>
+        <li>Create advanced visualization and graphics for data representation and user interfaces</li>
+        <li>Maintain code quality, organization, and automation</li>
+      </ol>
+
+      <h3>Why DuoAlly AI?</h3>
+
+      <p>At DuoAlly AI, we foster a culture of innovation, continuous improvement, and collaboration. You'll work alongside talented professionals dedicated to pushing the boundaries of technology to deliver exceptional results for our clients.</p>
+
+      <div class="text-center">
+        <button class="apply-button" id="applyButton">Apply Now!</button>
+      </div>
+    </div>
+
+    <div class="skills-section">
+      <h2>Technical Skills</h2>
+
+      <h3>Programming Languages:</h3>
+      <ul>
+        <li>Python</li>
+        <li>JavaScript/TypeScript</li>
+        <li>Java/C++</li>
+        <li>Go/Rust</li>
+      </ul>
+
+      <h3>Machine Learning & AI Libraries:</h3>
+      <ul>
+        <li>PyTorch</li>
+        <li>TensorFlow</li>
+        <li>scikit-learn</li>
+        <li>Keras</li>
+        <li>OpenAI Gym</li>
+        <li>NLTK/spaCy</li>
+      </ul>
+
+      <h3>Frameworks & Tools:</h3>
+      <ul>
+        <li>React/Vue/Angular</li>
+        <li>Node.js/Django/Spring</li>
+        <li>Express.js</li>
+        <li>Flask</li>
+        <li>Unity/Unreal Engine (for video game development)</li>
+        <li>OpenGL/DirectX (for graphics and visualization)</li>
+      </ul>
+
+      <h3>DevOps & Cloud Platforms:</h3>
+      <ul>
+        <li>Git version control</li>
+        <li>Docker containerization</li>
+        <li>CI/CD pipelines</li>
+        <li>Cloud platforms (AWS/GCP/Azure)</li>
+        <li>Database management (SQL and NoSQL)</li>
+      </ul>
+    </div>
+
+    <div class="job-description">
+      <p>You will be joining a team of experienced engineers who provide support and mentorship. We value collaboration, continuous learning, and innovation. An NDA will be required to protect DuoAlly AI's intellectual property and client information.</p>
+
+      <p>If you feel your skillset aligns with these requirements, apply now!</p>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('applyButton').addEventListener('click', function() {
+      alert('Thank you for your interest! Please send your resume to careers@DuoAllyAI.com');
+    });
+  </script>
+</body>
+</html>
+
