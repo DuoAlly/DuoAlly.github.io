@@ -1,1 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - DuoAlly AI</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <style>
+        .team-member {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2rem;
+            background: #f9f9f9;
+            border-radius: 8px;
+            padding: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
 
+        .team-member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 1.5rem;
+            object-fit: cover;
+            border: 2px solid #ddd;
+        }
+
+        .team-member h3 {
+            margin: 0 0 0.5rem 0;
+        }
+
+        .team-member p {
+            margin: 0;
+            color: #555;
+        }
+
+        .call-to-action {
+            text-align: center;
+            background: #e9f7ff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .call-to-action a {
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .call-to-action a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-content" data-aos="fade-up">
+            <h1>About Us</h1>
+            <p>Meet the team driving DuoAlly AI forward</p>
+            <img src="images/team.jpg" alt="Our Team" class="header-image" width="300" height="300">
+        </div>
+    </header>
+
+    <nav>
+        <div class="container nav-content">
+            <a href="#" class="nav-logo">DuoAlly</a>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="/careers.html">Careers</a></li>
+                <li><a href="#research">Research</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section id="about-us">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>Our Leadership Team</h2>
+                    <p>The people behind DuoAlly AI</p>
+                </div>
+                <div class="team-member" data-aos="fade-up" data-aos-delay="100">
+                    <img src="images/ruida.jpg" alt="Ruida Z.">
+                    <div>
+                        <h3>Ruida Z. - Founder & CEO</h3>
+                        <p>Ruida brings unparalleled vision and strategic acumen to the company, driving growth and shaping our future.</p>
+                    </div>
+                </div>
+                <div class="team-member" data-aos="fade-up" data-aos-delay="200">
+                    <img src="images/xavi.jpg" alt="Xavi H.">
+                    <div>
+                        <h3>Xavi H. - COO</h3>
+                        <p>Xavi ensures operational excellence, fostering efficiency and driving sustainable success.</p>
+                    </div>
+                </div>
+                <div class="team-member" data-aos="fade-up" data-aos-delay="300">
+                    <img src="images/yanice.jpg" alt="Yanice Z.">
+                    <div>
+                        <h3>Yanice Z. - CFO</h3>
+                        <p>Yanice oversees financial strategy, ensuring long-term stability and growth.</p>
+                    </div>
+                </div>
+                <div class="team-member" data-aos="fade-up" data-aos-delay="400">
+                    <img src="images/herman.jpg" alt="Herman S.">
+                    <div>
+                        <h3>Herman S. - CTO</h3>
+                        <p>Herman leads engineering efforts, leveraging technology to create innovative solutions.</p>
+                    </div>
+                </div>
+                <div class="section-header" data-aos="fade-up" style="margin-top: 2rem;">
+                    <h2>Product Leadership</h2>
+                </div>
+                <div class="team-member" data-aos="fade-up" data-aos-delay="100">
+                    <img src="images/heath.jpg" alt="Heath C.">
+                    <div>
+                        <h3>Heath C. - Product Manager</h3>
+                        <p>Heath ensures our products exceed expectations with a customer-centric approach.</p>
+                    </div>
+                </div>
+                <div class="section-header" data-aos="fade-up" style="margin-top: 2rem;">
+                    <h2>Talent Expertise</h2>
+                </div>
+                <div class="team-member" data-aos="fade-up" data-aos-delay="100">
+                    <img src="images/allison.jpg" alt="Allison D.">
+                    <div>
+                        <h3>Allison D. - Technical Recruiter</h3>
+                        <p>Allison builds strong teams, ensuring we have the best talent to drive innovation.</p>
+                    </div>
+                </div>
+                <div class="call-to-action" data-aos="fade-up" style="margin-top: 2rem;">
+                    <p>Interested in joining our team? <a href="/careers.html">Explore current job openings</a> to see how you can contribute to DuoAlly AI.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2025 DuoAlly AI | <a href="https://github.com/DuoAlly">GitHub Repository</a></p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+</body>
+</html>
