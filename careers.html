@@ -118,6 +118,19 @@
       margin-bottom: 2rem;
       color: #555;
     }
+    footer {
+      background: #333;
+      color: #fff;
+      padding: 1rem 0;
+      text-align: center;
+    }
+    footer a {
+      color: #0073e6;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
@@ -126,11 +139,9 @@
     <div class="container nav-content">
       <a href="/" class="nav-logo">DuoAlly</a>
       <ul class="nav-links">
-        <li><a href="/">Home</a></li>
-        <li><a href="#features">Features</a></li>
-        <li><a href="/careers.html" class="active">Careers</a></li>
-        <li><a href="#research">Research</a></li>
-        <li><a href="/about.html">About</a></li>
+        <li><a href="../">Home</a></li>
+        <li><a href="/" class="active">Careers</a></li>
+        <li><a href="../about.html">About</a></li>
       </ul>
     </div>
   </nav>
@@ -208,24 +219,31 @@
           <h3><i class="fas fa-paint-brush"></i> UI/UX Designer</h3>
           <p>Design intuitive, user-friendly interfaces and improve user experiences</p>
         </div>
-        <a href="/careers/ui-ux-designer.html" class="btn">View Position</a>
+        <a href="/careers/ui-ux-designer.html" class="btn" target="_blank">View Position</a>
       </div>
       <div class="position-card" data-aos="fade-up" data-aos-delay="100">
         <div>
           <h3><i class="fas fa-code"></i> Full Stack Web Developer</h3>
           <p>Build and maintain scalable web applications using modern technologies</p>
         </div>
-        <a href="/careers/web-developer.html" class="btn">View Position</a>
+        <a href="/careers/web-developer.html" class="btn" target="_blank">View Position</a>
       </div>
       <div class="position-card" data-aos="fade-up" data-aos-delay="200">
         <div>
           <h3><i class="fas fa-cogs"></i> Software Engineer</h3>
           <p>Design, develop, and implement software solutions to solve complex problems</p>
         </div>
-        <a href="/careers/software-engineer.html" class="btn">View Position</a>
+        <a href="/careers/software-engineer.html" class="btn" target="_blank">View Position</a>
       </div>           
     </div>
   </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <p>&copy; 2025 DuoAlly AI | <a href="https://github.com/DuoAlly" target="_blank">GitHub Repository</a></p>
+    </div>
+  </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <script>
