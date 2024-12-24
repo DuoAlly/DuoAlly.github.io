@@ -6,6 +6,119 @@
   <title>Careers | DuoAlly AI</title>
   <link rel="stylesheet" href="style.css"> <!-- Link to your global styles -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet"> <!-- AOS Animations -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"> <!-- Font Awesome Icons -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+    nav {
+      background: #0073e6;
+      color: #fff;
+      padding: 1rem 0;
+    }
+    .nav-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+      margin: 0;
+      padding: 0;
+    }
+    .nav-links li {
+      display: inline;
+    }
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+    }
+    .nav-links a.active {
+      font-weight: bold;
+      border-bottom: 2px solid #fff;
+    }
+    .overview {
+      text-align: center;
+      padding: 2rem 0;
+      background: #f4f4f4;
+    }
+    .overview h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .culture, .benefits, .positions {
+      padding: 2rem 0;
+    }
+    .culture-grid, .benefits-grid {
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      margin-top: 2rem;
+    }
+    .culture-card, .benefit-card, .position-card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 1.5rem;
+      text-align: center;
+      transition: box-shadow 0.3s ease;
+    }
+    .culture-card:hover, .benefit-card:hover, .position-card:hover {
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    .culture-card h3, .benefit-card h3, .position-card h3 {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+    }
+    .benefit-icon {
+      margin-bottom: 1rem;
+      color: #0073e6;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background: #0073e6;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      margin-top: 1rem;
+      transition: background 0.3s ease;
+    }
+    .btn:hover {
+      background: #005bb5;
+    }
+    .position-card {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem;
+    }
+    .position-card div {
+      flex: 1;
+    }
+    .position-card h3 {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .section-intro {
+      text-align: center;
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      color: #555;
+    }
+  </style>
 </head>
 <body>
   <!-- Navbar -->
@@ -36,16 +149,19 @@
       <h2>Our Culture</h2>
       <p class="section-intro">We believe in creating an environment where great people can do their best work</p>
       <div class="culture-grid">
-        <div class="culture-card">
-          <h3><i class="fas fa-lightbulb"></i> Innovation First</h3>
+        <div class="culture-card" data-aos="fade-up">
+          <i class="fas fa-lightbulb fa-3x"></i>
+          <h3>Innovation First</h3>
           <p>We encourage creative thinking and welcome new ideas that challenge the status quo</p>
         </div>
-        <div class="culture-card">
-          <h3><i class="fas fa-users"></i> Collaboration</h3>
+        <div class="culture-card" data-aos="fade-up" data-aos-delay="100">
+          <i class="fas fa-users fa-3x"></i>
+          <h3>Collaboration</h3>
           <p>Work with talented individuals who share your passion for excellence</p>
         </div>
-        <div class="culture-card">
-          <h3><i class="fas fa-chart-line"></i> Growth Mindset</h3>
+        <div class="culture-card" data-aos="fade-up" data-aos-delay="200">
+          <i class="fas fa-chart-line fa-3x"></i>
+          <h3>Growth Mindset</h3>
           <p>Continuous learning and development are core to our culture</p>
         </div>
       </div>
@@ -58,22 +174,22 @@
       <h2>Benefits & Perks</h2>
       <p class="section-intro">We take care of our team with competitive benefits and perks</p>
       <div class="benefits-grid">
-        <div class="benefit-card">
+        <div class="benefit-card" data-aos="fade-up">
           <i class="fas fa-laptop-house fa-3x benefit-icon"></i>
           <h3>Remote First</h3>
           <p>Work from anywhere in the world</p>
         </div>
-        <div class="benefit-card">
+        <div class="benefit-card" data-aos="fade-up" data-aos-delay="100">
           <i class="fas fa-graduation-cap fa-3x benefit-icon"></i>
           <h3>Learning Budget</h3>
           <p>Annual budget for courses and conferences</p>
         </div>
-        <div class="benefit-card">
+        <div class="benefit-card" data-aos="fade-up" data-aos-delay="200">
           <i class="fas fa-heart fa-3x benefit-icon"></i>
           <h3>Health & Wellness</h3>
           <p>Comprehensive health coverage and wellness programs</p>
         </div>
-        <div class="benefit-card">
+        <div class="benefit-card" data-aos="fade-up" data-aos-delay="300">
           <i class="fas fa-laptop fa-3x benefit-icon"></i>
           <h3>Equipment</h3>
           <p>Latest tools and tech to help you work efficiently</p>
@@ -87,21 +203,21 @@
     <div class="container">
       <h2>Open Positions</h2>
       <p class="section-intro">Join us in building the next generation of technology solutions</p>     
-      <div class="position-card">
+      <div class="position-card" data-aos="fade-up">
         <div>
           <h3><i class="fas fa-paint-brush"></i> UI/UX Designer</h3>
           <p>Design intuitive, user-friendly interfaces and improve user experiences</p>
         </div>
         <a href="/careers/ui-ux-designer.html" class="btn">View Position</a>
       </div>
-      <div class="position-card">
+      <div class="position-card" data-aos="fade-up" data-aos-delay="100">
         <div>
           <h3><i class="fas fa-code"></i> Full Stack Web Developer</h3>
           <p>Build and maintain scalable web applications using modern technologies</p>
         </div>
         <a href="/careers/web-developer.html" class="btn">View Position</a>
       </div>
-      <div class="position-card">
+      <div class="position-card" data-aos="fade-up" data-aos-delay="200">
         <div>
           <h3><i class="fas fa-cogs"></i> Software Engineer</h3>
           <p>Design, develop, and implement software solutions to solve complex problems</p>
