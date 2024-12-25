@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | DuoAlly AI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+    .contact-heading {
+        font-size: 2.5em;
+        font-weight: bold;
+        margin-bottom: 2rem;
+    }
+    
+    .contact-image {
+        max-width: 600px;
+        height: 355px;
+        margin: 2rem auto;
+        display: block;
+    }
+    
+    .contact-form {
+        background: #f8f9fa;
+        padding: 3rem;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        min-height: 600px;
+    }
+    
+    .form-control {
+        margin-bottom: 1.5rem;
+        padding: 0.8rem;
+    }
+    
+    textarea {
+        min-height: 250px;
+        resize: vertical;
+    }
+
+    .form-label {
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    input.form-control {
+        height: 50px;
+    }
+
+    .btn-primary {
+        padding: 0.8rem;
+        font-size: 1.1rem;
+        margin-top: 1rem;
+    }
+	.contact-p{
+		font-size:1.1em;
+		/* font-weight:bold; */
+	}
+</style>
+<body>
+	<nav>
+		<div class="container nav-content">
+		  <a href="../index.html" class="nav-logo">DuoAlly</a>
+		  <ul class="nav-links">
+			<li><a href="../">Home</a></li>
+			<li><a href="../features.html">Features</a></li>
+			<li><a href="../careers.html">Careers</a></li>
+			<li><a href="../research.html">Research</a></li>
+			<li><a href="../about.html">About</a></li>
+			<li><a href="/" class="active">Contact</a></li>
+		  </ul>
+		</div>
+	</nav>
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Left Column -->
+            <div class="col-md-6">
+                <h1 class="contact-heading">Enter Debug Mode:<br>Contact Us</h1>
+				<p class="lead mb-2 contact-p">Need to report a bug, want to request a feature, share feedback, or tell us about your gaming adevntures?</p>
+				<p class="lead mb-2 contact-p"> Send us a message - we will try to respond within 24 hours! </p>
+                <img src="images/contact_mascot.jpg" alt="Contact Support" class="contact-image">
+            </div>
+            
+            <!-- Right Column -->
+            <div class="col-md-6">
+                <div class="contact-form">
+                    <form>
+                        <div class="mb-4">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label for="email" class="form-label">Work Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" placeholder="Write your message here"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
