@@ -6,6 +6,7 @@
     <title>About Us - DuoAlly AI</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <style>
         .team-member {
             display: flex;
@@ -35,6 +36,21 @@
             color: #555;
         }
 
+        .icon-links {
+            margin-top: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        .icon-links a {
+            color: #333;
+            margin-right: 10px;
+            text-decoration: none;
+        }
+
+        .icon-links a:hover {
+            color: #007BFF;
+        }
+
         .call-to-action {
             text-align: center;
             background: #e9f7ff;
@@ -54,35 +70,10 @@
         }
 
         .header-image {
-            width: 100%; /* Makes the image span the full width of its container */
-            height: auto; /* Maintains the image's aspect ratio */
-            object-fit: contain; /* Ensures the full image is displayed without cutting */
+            width: 50%;
+            height: auto;
+            object-fit: contain;
             border-radius: 8px;
-        }
-
-        nav ul {
-            display: flex;
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        nav li {
-            margin-right: 1.5rem;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-        }
-
-        nav a.active {
-            color: #007BFF;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
         }
     </style>
 </head>
@@ -91,7 +82,7 @@
         <div class="container header-content" data-aos="fade-up">
             <h1>About Us</h1>
             <p>Meet the team driving DuoAlly AI forward</p>
-            <img src="images/team.jpg" alt="Our Team" class="header-image">
+            <!-- <img src="images/team.jpg" alt="Our Team" class="header-image"> -->
         </div>
     </header>
 
@@ -118,47 +109,130 @@
                     <div>
                         <h3>Ruida - Founder & CEO</h3>
                         <p>Ruida brings unparalleled vision and strategic acumen to the company, driving growth and shaping our future.</p>
+                        <div class="icon-links">
+                            <!-- <a href="mailto:ruida@duoally.ai"><i class="fas fa-envelope"></i></a> -->
+                            <a href="https://github.com/ruidazeng" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
                     </div>
                 </div>
-                <div class="team-member" data-aos="fade-up" data-aos-delay="200">
+                <!-- <div class="team-member" data-aos="fade-up" data-aos-delay="200">
                     <img src="people/xavi.jpg" alt="Xavi">
                     <div>
                         <h3>Xavi - COO</h3>
                         <p>Xavi ensures operational excellence, fostering efficiency and driving sustainable success.</p>
+                        <div class="icon-links">
+                            <a href="mailto:825308876@qq.com"><i class="fas fa-envelope"></i></a>
+                            <a href="https://github.com/HeXavi8" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
                     </div>
-                </div>
+                </div> -->
                 <div class="team-member" data-aos="fade-up" data-aos-delay="300">
                     <img src="people/daniela.jpg" alt="Daniela">
                     <div>
-                        <h3>Daniela - CFO</h3>
+                        <h3>Daniela - President & CFO</h3>
                         <p>Daniela oversees financial strategy, ensuring long-term stability and growth.</p>
+                        <div class="icon-links">
+                            <!-- <a href="mailto:daniela@duoally.ai"><i class="fas fa-envelope"></i></a> -->
+                            <a href="https://github.com/DanielaP0nce" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
                     </div>
                 </div>
-                <div class="team-member" data-aos="fade-up" data-aos-delay="400">
-                    <img src="people/herman.jpg" alt="Herman">
+                <!-- <div class="team-member" data-aos="fade-up" data-aos-delay="400">
+                    <img src="people/team.jpg" alt="team">
                     <div>
-                        <h3>Herman - CTO</h3>
-                        <p>Herman leads engineering efforts, leveraging technology to create innovative solutions.</p>
+                        <h3>TBD - CTO</h3>
+                        <p>TBD leads engineering efforts, leveraging technology to create innovative solutions.</p>
+                        <div class="icon-links">
+                            <a href="mailto:tbd@duoally.ai"><i class="fas fa-envelope"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
                     </div>
-                </div>
+                </div> -->
                 <div class="section-header" data-aos="fade-up" style="margin-top: 2rem;">
-                    <h2>Product Leadership</h2>
+                    <h2>Engineering & Development</h2>
                 </div>
+                <div class="team-member" data-aos="fade-up" data-aos-delay="100">
+                    <img src="people/briar.jpg" alt="Briar">
+                    <div>
+                        <h3>Briar - VP of Engineering</h3>
+                        <p>Briar leads engineering teams, driving innovation while developing scalable systems and delivering impactful software solutions.</p>
+                        <div class="icon-links">
+                            <a href="mailto:briarone2@gmail.com" target="_blank" aria-label="Send Briar an email"><i class="fas fa-envelope"></i></a>
+                            <a href="https://github.com/briar" target="_blank" aria-label="View Briar's GitHub profile"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>            
                 <div class="team-member" data-aos="fade-up" data-aos-delay="100">
                     <img src="people/heath.jpg" alt="Heath">
                     <div>
                         <h3>Heath - Product Manager</h3>
                         <p>Heath ensures our products exceed expectations with a customer-centric approach.</p>
+                        <div class="icon-links">
+                            <!-- <a href="mailto:heath@duoally.ai"><i class="fas fa-envelope"></i></a> -->
+                            <a href="https://github.com/WHeightsAI" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
                     </div>
                 </div>
+                <div class="team-member" data-aos="fade-up" data-aos-delay="100">
+                    <img src="people/paul.jpg" alt="Paul">
+                    <div>
+                        <h3>Paul - Software Engineer</h3>
+                        <p>Paul is passionate about coding and problem-solving, contributing fresh ideas to our development team.</p>
+                        <div class="icon-links">
+                            <a href="pjdequena@gmail.com"><i class="fas fa-envelope"></i></a>
+                            <a href="https://github.com/iceboxcake" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="team-member" data-aos="fade-up" data-aos-delay="400">
+                    <img src="people/herman.jpg" alt="Herman">
+                    <div>
+                        <h3>Herman - Data Scientist</h3>
+                        <p>Herman drives innovation using data scraping and machine learning across various domains.</p>
+                        <div class="icon-links">
+                            <a href="mailto:herman@duoally.ai"><i class="fas fa-envelope"></i></a>
+                            <a href="https://github.com/HermanSanghera18" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>     -->
+                <div class="team-member" data-aos="fade-up" data-aos-delay="100">
+                    <img src="people/mingchao.jpg" alt="Mingchao">
+                    <div>
+                        <h3>Mingchao - Hardware Engineer</h3>
+                        <p>Mingchao specializes in optimizing hardwares and systems to ensure performance and reliability.</p>
+                        <div class="icon-links">
+                            <a href="mailto:mczhou35@gmail.com"><i class="fas fa-envelope"></i></a>
+                            <a href="https://github.com/mingchao-zhou" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/mingchao-zhou-44927a299/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                
                 <div class="section-header" data-aos="fade-up" style="margin-top: 2rem;">
-                    <h2>Talent Expertise</h2>
+                    <h2>Human Resources (HR)</h2>
+                </div>
+                <div class="team-member" data-aos="fade-up" data-aos-delay="100">
+                    <img src="people/yanice.jpg" alt="Yanice">
+                    <div>
+                        <h3>Yanice - Director of Human Resources</h3>
+                        <p>Yanice drives HR strategy, builds a strong workplace culture, and ensures alignment between people and business goals.</p>
+                        <div class="icon-links">
+                            <a href="mailto:yanicezeng28@gmail.com"><i class="fas fa-envelope"></i></a>
+                            <a href="https://github.com/YaniceZ" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/yanice-zeng-1674b6318" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
                 </div>
                 <div class="team-member" data-aos="fade-up" data-aos-delay="100">
                     <img src="people/allison.jpg" alt="Allison">
                     <div>
                         <h3>Allison - Technical Recruiter</h3>
                         <p>Allison builds strong teams, ensuring we have the best talent to drive innovation.</p>
+                        <div class="icon-links">
+                            <a href="mailto:duoallyai@gmail.com"><i class="fas fa-envelope"></i></a>
+                            <a href="https://github.com/DuoAlly-AI-Recruiter" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
                     </div>
                 </div>
                 <div class="call-to-action" data-aos="fade-up" style="margin-top: 2rem;">
