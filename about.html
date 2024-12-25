@@ -52,6 +52,38 @@
         .call-to-action a:hover {
             text-decoration: underline;
         }
+
+        .header-image {
+            width: 100%; /* Makes the image span the full width of its container */
+            height: auto; /* Maintains the image's aspect ratio */
+            object-fit: contain; /* Ensures the full image is displayed without cutting */
+            border-radius: 8px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav li {
+            margin-right: 1.5rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        nav a.active {
+            color: #007BFF;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -59,7 +91,7 @@
         <div class="container header-content" data-aos="fade-up">
             <h1>About Us</h1>
             <p>Meet the team driving DuoAlly AI forward</p>
-            <img src="images/team.jpg" alt="Our Team" class="header-image" width="300" height="300">
+            <img src="images/team.jpg" alt="Our Team" class="header-image">
         </div>
     </header>
 
@@ -67,11 +99,9 @@
         <div class="container nav-content">
             <a href="#" class="nav-logo">DuoAlly</a>
             <ul class="nav-links">
-                <li><a href="/">Home</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="/careers.html">Careers</a></li>
-                <li><a href="#research">Research</a></li>
-                <li><a href="/about.html">About</a></li>
+                <li><a href="/" class="">Home</a></li>
+                <li><a href="/careers.html" class="">Careers</a></li>
+                <li><a href="/about.html" class="active">About</a></li>
             </ul>
         </div>
     </nav>
@@ -84,30 +114,30 @@
                     <p>The people behind DuoAlly AI</p>
                 </div>
                 <div class="team-member" data-aos="fade-up" data-aos-delay="100">
-                    <img src="images/ruida.jpg" alt="Ruida Z.">
+                    <img src="people/ruida.jpg" alt="Ruida">
                     <div>
-                        <h3>Ruida Z. - Founder & CEO</h3>
+                        <h3>Ruida - Founder & CEO</h3>
                         <p>Ruida brings unparalleled vision and strategic acumen to the company, driving growth and shaping our future.</p>
                     </div>
                 </div>
                 <div class="team-member" data-aos="fade-up" data-aos-delay="200">
-                    <img src="images/xavi.jpg" alt="Xavi H.">
+                    <img src="people/xavi.jpg" alt="Xavi">
                     <div>
-                        <h3>Xavi H. - COO</h3>
+                        <h3>Xavi - COO</h3>
                         <p>Xavi ensures operational excellence, fostering efficiency and driving sustainable success.</p>
                     </div>
                 </div>
                 <div class="team-member" data-aos="fade-up" data-aos-delay="300">
-                    <img src="images/yanice.jpg" alt="Yanice Z.">
+                    <img src="people/daniela.jpg" alt="Daniela">
                     <div>
-                        <h3>Yanice Z. - CFO</h3>
-                        <p>Yanice oversees financial strategy, ensuring long-term stability and growth.</p>
+                        <h3>Daniela - CFO</h3>
+                        <p>Daniela oversees financial strategy, ensuring long-term stability and growth.</p>
                     </div>
                 </div>
                 <div class="team-member" data-aos="fade-up" data-aos-delay="400">
-                    <img src="images/herman.jpg" alt="Herman S.">
+                    <img src="people/herman.jpg" alt="Herman">
                     <div>
-                        <h3>Herman S. - CTO</h3>
+                        <h3>Herman - CTO</h3>
                         <p>Herman leads engineering efforts, leveraging technology to create innovative solutions.</p>
                     </div>
                 </div>
@@ -115,9 +145,9 @@
                     <h2>Product Leadership</h2>
                 </div>
                 <div class="team-member" data-aos="fade-up" data-aos-delay="100">
-                    <img src="images/heath.jpg" alt="Heath C.">
+                    <img src="people/heath.jpg" alt="Heath">
                     <div>
-                        <h3>Heath C. - Product Manager</h3>
+                        <h3>Heath - Product Manager</h3>
                         <p>Heath ensures our products exceed expectations with a customer-centric approach.</p>
                     </div>
                 </div>
@@ -125,14 +155,14 @@
                     <h2>Talent Expertise</h2>
                 </div>
                 <div class="team-member" data-aos="fade-up" data-aos-delay="100">
-                    <img src="images/allison.jpg" alt="Allison D.">
+                    <img src="people/allison.jpg" alt="Allison">
                     <div>
-                        <h3>Allison D. - Technical Recruiter</h3>
+                        <h3>Allison - Technical Recruiter</h3>
                         <p>Allison builds strong teams, ensuring we have the best talent to drive innovation.</p>
                     </div>
                 </div>
                 <div class="call-to-action" data-aos="fade-up" style="margin-top: 2rem;">
-                    <p>Interested in joining our team? <a href="/careers.html">Explore current job openings</a> to see how you can contribute to DuoAlly AI.</p>
+                    <p>Interested in joining our team? <a href="../careers.html">Explore current job openings</a> to see how you can contribute to DuoAlly AI.</p>
                 </div>
             </div>
         </section>
