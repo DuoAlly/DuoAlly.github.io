@@ -104,6 +104,14 @@ nav {
     color: var(--primary);
 }
 
+nav a.active {
+    color: #007BFF;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
 /* Section Styles */
 section {
     padding: 5rem 0;
