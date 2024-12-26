@@ -28,6 +28,7 @@
         padding: 3rem;
         border-radius: 10px;
         box-shadow: 0 0 15px rgba(0,0,0,0.1);
+		border: 2px solid #0066cc; 
         min-height: 600px;
     }
     
@@ -83,31 +84,28 @@
             </div>
             
             <!-- Right Column -->
-            <div class="col-md-6">
-                <div class="contact-form">
-                    <form>
-                        <div class="mb-4">
-                            <label for="name" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="name" placeholder="Enter your name">
-                        </div>
-                        
-                        <div class="mb-4">
-                            <label for="email" class="form-label">Work Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
-                        </div>
-                        
-                        <div class="mb-4">
-                            <label for="message" class="form-label">Message</label>
-                            <textarea class="form-control" id="message" placeholder="Write your message here"></textarea>
-                        </div>
-                        
-                        <button type="submit" class="btn btn-primary w-100">Send Message</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
+			<div class="col-md-6">
+				<div class="contact-form">
+					<form action="https://formspree.io/f/xyzzkddy" method="POST">
+						<div class="mb-4">
+							<label for="name" class="form-label">Name</label>
+							<input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+						</div>
+						
+						<div class="mb-4">
+							<label for="email" class="form-label">Work Email</label>
+							<input type="email" class="form-control" id="email" name="email" placeholder="Enter your email">
+						</div>
+						
+						<div class="mb-4">
+							<label for="message" class="form-label">Message</label>
+							<textarea class="form-control" id="message" name="message" placeholder="Write your message here"></textarea>
+						</div>
+						
+						<button type="submit" class="btn btn-primary w-100">Send Message</button>
+					</form>
+				</div>
+			</div>
 	<footer>
         <div class="container footer-content">
             <p>&copy; 2025 DuoAlly AI | <a href="https://github.com/DuoAlly">GitHub Repository</a></p>
