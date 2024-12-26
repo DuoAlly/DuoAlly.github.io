@@ -75,11 +75,15 @@
             object-fit: contain;
             border-radius: 8px;
         }
-		/* .story-image{
-			width: 100%; 
+		.story-image{
+			width: 70%; 
 			height: 100%; 
-			object-fit: cover;
-		} */
+			border: 2px solid #0066cc; 
+    		box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+   			border-radius: 8px;
+
+		}
+
     </style>
 </head>
 <body>
@@ -126,9 +130,8 @@
 							</div>
 							
 							<!-- Right image column -->
-							<div class="story-image" style="flex: 1;">
-								<img src="images/our_story.jpg" alt="Our Story" style="width: 70%; height: 100%; object-fit: cover;border: 
-								2px solid #0066cc; box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); border-radius: 8px;">
+							<div class="image-container" style="flex: 1;">
+								<img src="images/our_story.jpg" alt="Our Story" class = "story-image">
 							</div>
 						</div>
 					</div>
