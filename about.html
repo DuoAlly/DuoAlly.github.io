@@ -75,6 +75,15 @@
             object-fit: contain;
             border-radius: 8px;
         }
+		.story-image{
+			width: 70%; 
+			height: 100%; 
+			border: 2px solid #0066cc; 
+    		box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+   			border-radius: 8px;
+
+		}
+
     </style>
 </head>
 <body>
@@ -102,13 +111,30 @@
         <section id="about-us">
             <div class="container">
 				<div class="section-header" data-aos="fade-up">
-                    <h2>Our Story</h2>
-                    <p style="text-align:left"> DuoAlly was born from those familiar moments of wishing for companionship during 
-						single-player adventures. Our founders, avid gamers themselves, understood that while solo gaming has its 
-						unique appeal, it often lacks the dynamic interactions found in multiplayer experiences. This led to our 
-						vision: creating an AI companion that understands and adapts to your gaming journey. Through careful development 
-						and player feedback, we've built an AI ally that enhances solo gaming while preserving its intimate nature. 
-						Today, DuoAlly proves that single-player gaming can be both solitary and social.</p>
+					<div class="story-grid">
+						<!-- Title centered at the top -->
+						<h2 style="text-align: center; width: 100%;">Our Story</h2>
+						
+						<!-- Content container -->
+						<div style="display: flex; width: 100%;">
+							<!-- Left text column -->
+							<div class="story-text" style="flex: 1; padding: 10px; margin-top:70px;">
+								<p style="text-align: left;">
+									DuoAlly emerged from those moments we all know - when you're deep in a single-player adventure, wishing 
+									you had someone to share the experience with. Our founders, avid gamers themselves, understood that while 
+									solo gaming has its unique appeal, it often misses the dynamic interactions of multiplayer experiences. This
+									 led to our vision: creating an AI ally that understands and adapts to your gaming journey. Through careful 
+									 development and player feedback, we've built an intelligent partner that enhances solo gaming while preserving 
+									 its intimate nature. Today, DuoAlly proves that single-player gaming can be both solitary and interactive.
+								</p>
+							</div>
+							
+							<!-- Right image column -->
+							<div class="image-container" style="flex: 1;">
+								<img src="images/our_story.jpg" alt="Our Story" class = "story-image">
+							</div>
+						</div>
+					</div>
                 </div>
                 <div class="section-header" data-aos="fade-up">
                     <h2>Our Leadership Team</h2>
