@@ -87,152 +87,6 @@
 			
 
 		}
-		/* robot animation css */
-		.header-content {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: center;
-			text-align: center;
-		}
-
-		.robot-container {
-			background: transparent;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			width: 200px;  
-			margin: 0 auto;
-			padding: 0;
-			position: relative; 
-		}
-
-
-		.robot-head {
-				width: 200px;
-				height: 200px;
-				position: relative;
-		}
-
-		.head-outline {
-				width: 160px;
-				height: 120px;
-				border: 20px solid #fff;
-				border-radius: 45px;
-				position: absolute;
-				bottom: 20px;
-				left: 50%;
-				transform: translateX(-50%);
-		}
-
-		.antenna {
-				width: 0;
-				height: 0; 
-				border-left: 10px solid transparent; 
-				border-right: 10px solid transparent; 
-				border-bottom: 45px solid #fff; 
-				position: absolute;
-				top: 15px;
-				left: 50%;
-				transform: translateX(-50%);
-		}
-
-		.antenna-oval {
-				height: 30px;
-				width: 60px;
-				background-color: #fff;
-				border-radius: 50%;
-				position: absolute;
-				left: 35%;
-				top:50px;
-		} 
-
-		.antenna::after {
-				content: '';
-				width: 22px;
-				height: 22px;
-				background: #fff;
-				border-radius: 50%;
-				position: absolute;
-				top: -3px;
-				left: 50%;
-				transform: translateX(-50%);
-				animation: glowBlue 4s infinite;
-		}
-
-		@keyframes glowBlue {
-				0% { 
-					box-shadow: 0 0 20px 10px #43d66f;
-					background: #00a6ed;
-				}
-
-				50%{ 
-					box-shadow: 0 0 20px 10px #e759d1;
-					background: #eac435;
-				}
-				75% { 
-					box-shadow: 0 0 20px 10px #ee8741;
-					background: #03cea4;
-				}
-				100% { 
-					box-shadow: 0 0 20px 10px #43d66f;
-					background: #fb4d3d;
-				}
-		}
-
-		.ear {
-				width: 30px;
-				height: 40px;
-				background: #fff;
-				border-radius: 30px;
-				position: absolute;
-				top: 50%;
-				transform: translateY(-50%);
-		}
-
-		.ear.left {
-				left: -35px;
-		}
-
-		.ear.right {
-				right: -35px;
-		}
-
-		.eye {
-				width: 16px;
-				height: 30px;
-				background: #fff;
-				border-radius: 160px;
-				position: absolute;
-				top: 50%;
-				animation: blink 1s infinite;
-		}
-
-		.eye.left {
-				left: 30px;
-		}
-
-		.eye.right {
-				right: 30px;
-		}
-
-		@keyframes blink {
-				0%, 92%, 94% {
-					transform: scaleY(1) translateY(-50%);
-				}
-				100% {
-					transform: scaleY(0.1) translateY(-50%);
-				} 
-			
-		}
-
-		@keyframes colorChange {
-				0% { filter: hue-rotate(0deg); }
-				50% { filter: hue-rotate(180deg); }
-				100% { filter: hue-rotate(360deg); }
-		}
-
-
     </style>
 </head>
 <body>
@@ -272,7 +126,7 @@
             <div class="container">
 				<div class="section-header" data-aos="fade-up">
 					<div class="row">
-						<h2 style="text-align: center; width: 100%;">Our Story</h2>
+						<h1 style="text-align: center; width: 100%; font-weight:bold;">Our Story</h1>
 						<div  class="col-md-6 d-flex align-items-center">
 							<p style="text-align: left;" class="story-paragraph" >
 								DuoAlly emerged from those moments we all know - when you're deep in a single-player adventure, wishing 
@@ -290,7 +144,7 @@
 			
 				</div>
                 <div class="section-header" data-aos="fade-up">
-                    <h2>Our Leadership Team</h2>
+                    <h1 style="font-weight:bold;">Our Leadership Team</h1>
                     <p>The people behind DuoAlly AI</p>
                 </div>
                 <div class="team-member" data-aos="fade-up" data-aos-delay="100">
