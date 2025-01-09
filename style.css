@@ -182,23 +182,46 @@ section {
 
 /* Footer */
 footer {
-    background: var(--text);
+    background: #333;
     color: var(--white);
-    padding: 4rem 0;
-    margin-top: 4rem;
+    padding: 1rem 0;
+    margin-top: 1rem;
+	text-align: center;
 }
 
 .footer-content {
     text-align: center;
 }
 
-.footer-content a {
-    color: var(--primary);
-    text-decoration: none;
+.social-links {
+	display: flex;
+	justify-content: center;
+	gap: 2rem;
+	margin-bottom: 1rem;
 }
 
-.footer-content a:hover {
-    text-decoration: underline;
+.social-icon {
+	color: white;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+	color: #2563EB;
+}
+
+.social-icon svg {
+	width: 18px;
+	height: 18px;
+	fill: currentColor;
+}
+
+.copyright {
+	font-size: 0.9rem;
+	opacity: 0.8;
 }
 
 /* Animation Classes */
@@ -287,7 +310,7 @@ footer {
     }
 }
 
-/* robot animation css */
+/* Robot Animation*/
 .robot-container {
 	background: transparent;
 	display: flex;
